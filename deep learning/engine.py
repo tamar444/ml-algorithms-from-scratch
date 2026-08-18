@@ -1,8 +1,5 @@
 import torch
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
-
-
 def accuracy_fn(y_true, y_pred):
     correct = torch.eq(y_true, y_pred).sum().item()
     return (correct / len(y_pred)) * 100

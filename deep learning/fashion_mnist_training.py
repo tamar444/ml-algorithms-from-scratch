@@ -38,9 +38,8 @@ def main():
 
         results[name] = training_loop(model, name, train_dataloader, test_dataloader, loss_fn, optimizer, device)
 
-    import pandas as pd
-    results_df = pd.DataFrame(results).T
-    print(results_df)
+    for name, metrics in results.items():
+        print(f"{name}: {metrics}")
 
 if __name__ == "__main__":
     main()
