@@ -6,3 +6,4 @@ Implementation of common machine learning and deep learning algorithms from scra
 
 - `supervised/` - Logistic Regression, Linear Regression, KNN, Naive Bayes
 - `deep learning/` - MLP, CNN, RNN, LSTM
+  - `nlp/` - Word2Vec Pipeline
